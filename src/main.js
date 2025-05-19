@@ -1,5 +1,4 @@
 import './style.css';
-import '@fontsource-variable/anek-devanagari';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import { updateDates, startTimeSync } from './modules/dateSync';
