@@ -1,5 +1,16 @@
 export const bgImages = [
+  'https://i.imgur.com/P8BUYNY.jpeg',
+  'https://i.imgur.com/3Jjgl9a.jpeg',
+  'https://i.imgur.com/DpmBEhO.jpeg',
+  'https://i.imgur.com/49qgWnq.jpeg',
+  'https://i.imgur.com/BpGLLKH.jpeg',
+  'https://i.imgur.com/6Ezeyhk.jpeg',
+  'https://i.imgur.com/gtR0BXI.jpeg',
   'https://i.imgur.com/I547SJK.jpeg',
+  'https://i.imgur.com/wmCzexS.jpeg',
+  'https://i.imgur.com/PwnAux4.jpeg',
+  'https://i.imgur.com/rcemvGA.jpeg',
+  'https://i.imgur.com/evqsDnH.jpeg',
+  'https://i.imgur.com/xEpI0Ur.jpeg',
   'https://i.imgur.com/LI3RRMG.jpeg',
-  // Add more image URLs here
 ];
