@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabre: Nepali Date Tab</title>
+  </head>
+  <body>
+    <main>
+      <div id="np_widget_wiz1" widget="day"></div>
+      <script
+        async
+        src="https://nepalipatro.com.np/np-widgets/nepalipatro.js"
+        id="wiz1"
+      ></script>
+
+      <div class="upper-wrapper">
+        <h3 id="custom-day-en"></h3>
+
+        <div class="np-time-check--wrapper">
+          <h3 class="np-time--check">
+            <span id="np-time-period-indicator"></span>
+            <span id="custom-np-day-time"></span
+            ><span id="custom-np-day-second"></span>
+          </h3>
+
+          <button class="btn-nav--wrapper">
+            <i class="bi bi-text-left"></i>
+            <span>मेन्यु</span>
+          </button>
+        </div>
+      </div>
+
+      <setion class="date--wrapper">
+        <div>
+          <h1 id="custom-day-date"></h1>
+          <h2 id="custom-day-month"></h2>
+
+          <h3 class="day-tithi--wrapper">
+            <span id="custom-day-day"></span>
+            <span id="custom-np-day-ns"></span>
+          </h3>
+        </div>
+      </setion>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

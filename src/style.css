@@ -1,0 +1,158 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background-image: url(https://i.imgur.com/I547SJK.jpeg);
+  font-family: 'Anek Devanagari', sans-serif;
+  padding: 2rem;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+#np_widget_wiz1 {
+  display: none;
+}
+
+/* Typography */
+#custom-day-day,
+#custom-np-day-ns,
+#custom-day-en,
+.np-time--check {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.upper-wrapper {
+  text-align: center;
+}
+
+.day-tithi--wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-nav--wrapper {
+  border: 0;
+  background: none;
+  display: flex;
+  margin: 0 0 1rem auto;
+  color: white;
+  gap: 1rem;
+  font-size: 1.5rem;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-nav--wrapper span {
+  margin-top: -0.1rem;
+}
+
+.np-time-check--wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.np-time--check {
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.date--wrapper {
+  min-height: 85vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+#custom-day-date {
+  font-size: 12.5rem;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+#custom-day-month {
+  font-weight: 400;
+  font-size: 5.25rem;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .upper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .np-time-check--wrapper {
+    gap: 2rem;
+    margin-left: auto;
+  }
+
+  #custom-day-en {
+    text-align: left;
+  }
+
+  .np-time--check {
+    text-align: right;
+  }
+}
