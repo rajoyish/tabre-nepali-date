@@ -38,10 +38,22 @@ Tabre is a lightweight and visually pleasing Chrome Extension that transforms yo
 
 ## Installation
 
-**Chrome Extension (Recommended)**
+## Chrome Extension
 
-> Coming soon to the Chrome Web Store!  
-> For now, you can try the live web version or load as an unpacked extension.
+The `chrome-extension/` folder contains a Chrome extension that sets your new tab page to the live Tabre site.
+
+- `manifest.json`: Extension config
+- `tabre.html`: Instantly redirects new tabs to https://tabre.netlify.app/
+- `icon128.png`: (optional) Extension icon
+
+### How to use:
+
+1. Go to `chrome://extensions/`
+2. Enable Developer Mode
+3. Click "Load unpacked" and select the `chrome-extension` folder
+4. Open a new tab!
+
+This extension will always load the latest deployed version of Tabre.
 
 **Web Demo**  
 Visit: [https://tabre.netlify.app/](https://tabre.netlify.app/)
