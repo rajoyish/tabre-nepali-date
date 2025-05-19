@@ -12,7 +12,6 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "@fontsource-variable/anek-devanagari": "^5.2.5",
     "bootstrap-icons": "^1.13.1"
   }
 }
