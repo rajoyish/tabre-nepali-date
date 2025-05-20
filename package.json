@@ -1,13 +1,11 @@
 {
   "name": "tabre-nepali-date",
   "private": true,
-  "version": "0.0.0",
+  "version": "5.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "copy-extension": "node copy-dist-to-extension.mjs",
-    "build-extension": "vite build && npm run copy-extension",
     "preview": "vite preview"
   },
   "devDependencies": {
