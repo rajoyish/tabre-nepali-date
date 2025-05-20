@@ -94,7 +94,6 @@ main {
   border: 0;
   background: none;
   display: flex;
-  margin: 0 0 1rem auto;
   color: white;
   gap: 1rem;
   font-size: 1.5rem;
@@ -109,11 +108,11 @@ main {
 .np-time-check--wrapper {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .np-time--check {
   text-align: center;
-  margin-top: -1rem;
 }
 
 .date--wrapper {
@@ -146,6 +145,11 @@ main {
   .np-time-check--wrapper {
     gap: 2rem;
     margin-left: auto;
+    flex-direction: row;
+  }
+
+  .btn-nav--wrapper {
+    margin: 0 0 1rem auto;
   }
 
   #custom-day-en {
@@ -154,5 +158,6 @@ main {
 
   .np-time--check {
     text-align: right;
+    margin-top: -1rem;
   }
 }
