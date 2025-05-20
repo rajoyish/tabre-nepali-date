@@ -1,10 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="refresh" content="0; URL='https://tabre.netlify.app/'" />
-    <title>Tabre Nepali Date</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicons/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tabre: Nepali Date Tab</title>
+    <script type="module" crossorigin src="/assets/index-DrYnDjUV.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-kp_yOkQm.css">
   </head>
   <body>
-    <p>Loading Tabre...</p>
+    <main>
+      <div id="np_widget_wiz1" widget="day"></div>
+      <script
+        async
+        src="https://nepalipatro.com.np/np-widgets/nepalipatro.js"
+        id="wiz1"
+      ></script>
+
+      <div class="upper-wrapper">
+        <h3 id="custom-day-en"></h3>
+
+        <div class="np-time-check--wrapper">
+          <h3 class="np-time--check">
+            <span id="np-time-period-indicator"></span>
+            <span id="custom-np-day-time"></span
+            ><span id="custom-np-day-second"></span>
+          </h3>
+
+          <button class="btn-nav--wrapper">
+            <i class="bi bi-text-left"></i>
+            <span>मेन्यु</span>
+          </button>
+        </div>
+      </div>
+
+      <setion class="date--wrapper">
+        <div>
+          <h1 id="custom-day-date"></h1>
+          <h2 id="custom-day-month"></h2>
+
+          <h3 class="day-tithi--wrapper">
+            <span id="custom-day-day"></span>
+            <span id="custom-np-day-ns"></span>
+          </h3>
+        </div>
+      </setion>
+    </main>
   </body>
 </html>
