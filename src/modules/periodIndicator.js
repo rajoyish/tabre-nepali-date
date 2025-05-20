@@ -1,6 +1,6 @@
-import { npTimePeriods } from './npTimePeriods';
-import { to24Hour, isInRange } from './timeHelpers';
-import { bgImages } from './bgImages';
+import { npTimePeriods } from "./npTimePeriods.js";
+import { to24Hour, isInRange } from "./timeHelpers.js";
+import { bgImages } from "./bgImages.js";
 
 const periodToImageIndex = {};
 npTimePeriods.forEach(([period], i) => {
@@ -10,12 +10,12 @@ npTimePeriods.forEach(([period], i) => {
 let lastTimePeriod = null;
 
 export function setNepaliTimePeriodIndicator(widgetTime) {
-  const indicator = document.getElementById('np-time-period-indicator');
+  const indicator = document.getElementById("np-time-period-indicator");
   if (!indicator) return;
 
   const timeMatch = widgetTime.match(/^(\d{1,2}:\d{2})\s*([AP]M)$/i);
   if (!timeMatch) {
-    indicator.textContent = '';
+    indicator.textContent = "";
     lastTimePeriod = null;
     return;
   }
@@ -24,18 +24,18 @@ export function setNepaliTimePeriodIndicator(widgetTime) {
   const [hour, min] = to24Hour(hhmm, ampm);
 
   for (const [np, range] of npTimePeriods) {
-    const [start, end] = range.split('–');
+    const [start, end] = range.split("–");
     if (isInRange(hour, min, start, end)) {
       if (lastTimePeriod !== np) {
         indicator.textContent = np;
-        document.body.style.backgroundImage = `url(${
+        document.body.style.backgroundImage = `url('${
           bgImages[periodToImageIndex[np]]
-        })`;
+        }')`;
         lastTimePeriod = np;
       }
       return;
     }
   }
-  indicator.textContent = '';
+  indicator.textContent = "";
   lastTimePeriod = null;
 }

@@ -1,16 +1,8 @@
-export const bgImages = [
-  'https://i.imgur.com/P8BUYNY.jpeg',
-  'https://i.imgur.com/3Jjgl9a.jpeg',
-  'https://i.imgur.com/DpmBEhO.jpeg',
-  'https://i.imgur.com/49qgWnq.jpeg',
-  'https://i.imgur.com/BpGLLKH.jpeg',
-  'https://i.imgur.com/6Ezeyhk.jpeg',
-  'https://i.imgur.com/gtR0BXI.jpeg',
-  'https://i.imgur.com/I547SJK.jpeg',
-  'https://i.imgur.com/wmCzexS.jpeg',
-  'https://i.imgur.com/PwnAux4.jpeg',
-  'https://i.imgur.com/rcemvGA.jpeg',
-  'https://i.imgur.com/evqsDnH.jpeg',
-  'https://i.imgur.com/xEpI0Ur.jpeg',
-  'https://i.imgur.com/LI3RRMG.jpeg',
-];
+import bg1 from "../assets/bg (1).jpeg";
+import bg2 from "../assets/bg (2).jpeg";
+import bg3 from "../assets/bg (3).jpeg";
+import bg4 from "../assets/bg (4).jpeg";
+import bg5 from "../assets/bg (5).jpeg";
+import bg6 from "../assets/bg (6).jpeg";
+
+export const bgImages = [bg1, bg2, bg3, bg4, bg5, bg6];
