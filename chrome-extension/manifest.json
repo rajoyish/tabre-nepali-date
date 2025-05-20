@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Tabre Nepali Date New Tab",
-  "version": "2.0",
+  "version": "3.0",
   "description": "Shows Nepali date, time, and utilities in each new tab.",
   "chrome_url_overrides": {
     "newtab": "tabre.html"
